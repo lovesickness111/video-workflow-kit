@@ -1,6 +1,7 @@
-"""Rebuild the Vietnamese handoff guide and replace screenshot placeholders when supplied."""
+"""Generate an optional starter draft. The manually edited DOCX is authoritative."""
 from pathlib import Path
 from datetime import date
+import argparse
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -10,7 +11,12 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
 SHOTS=ROOT/'docs/screenshots'
-OUT=ROOT/'docs/Huong-dan-su-dung.docx'
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output',type=Path,default=ROOT/'local/guide-draft.docx')
+args=parser.parse_args()
+OUT=args.output.resolve()
+if OUT==(ROOT/'docs/Huong-dan-su-dung.docx').resolve():
+    parser.error('The hand-edited guide is authoritative. Choose a separate draft output to preserve manual content and screenshots.')
 doc=Document()
 sec=doc.sections[0]
 sec.page_width=Cm(21);sec.page_height=Cm(29.7)

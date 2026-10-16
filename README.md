@@ -2,7 +2,7 @@
 
 Bộ workspace Windows để đồng nghiệp dùng Codex chỉnh video bằng **video-use**, sau đó đăng bản đã duyệt lên **YouTube, TikTok, Facebook hoặc LinkedIn** qua Zernio.
 
-**Bắt đầu tại [START-HERE.md](START-HERE.md).** Hướng dẫn chính là [file Word tiếng Việt](docs/Huong-dan-su-dung.docx), có 8 vị trí để bổ sung ảnh chụp màn hình.
+**Bắt đầu tại [START-HERE.md](START-HERE.md).** Hướng dẫn chính là [file Word tiếng Việt](docs/Huong-dan-su-dung.docx), có ảnh thực cho phần mở workspace, đăng ký ElevenLabs/Zernio và tạo API key.
 
 Tải ZIP từ [Releases](https://github.com/lovesickness111/video-workflow-kit/releases), giải nén và mở folder trong Codex. Gửi:
 
@@ -14,7 +14,7 @@ Tải ZIP từ [Releases](https://github.com/lovesickness111/video-workflow-kit/
 - Setup Windows, nhập key ẩn và kiểm tra trạng thái cục bộ.
 - Công cụ đăng MP4 độc lập, có lịch sử và xử lý đăng lỗi một phần.
 - Khóa phiên bản, cập nhật/khôi phục riêng từng thành phần.
-- Tài liệu Word và [danh sách ảnh cần bổ sung](docs/screenshots/README.md).
+- Tài liệu Word, [danh sách ảnh](docs/screenshots/README.md) và [nguồn ảnh](docs/screenshots/SOURCES.md).
 - [Hướng dẫn người bảo trì](docs/MAINTAINER.md).
 
 Không chứa API key thật, tài khoản tác giả, video cá nhân hoặc browser profile. Cần đăng nhập và kết nối tài khoản riêng trên máy người dùng.

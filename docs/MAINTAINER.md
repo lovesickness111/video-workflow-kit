@@ -50,6 +50,8 @@ Rollback khôi phục source phiên bản trước, không đảo ngược bài 
 
 ## Bổ sung ảnh vào Word
 
-Chụp theo `docs/screenshots/README.md`. Che API key, mã đăng nhập, email cá nhân không cần thiết và thông tin nhạy cảm trước khi lưu ảnh. Đặt PNG đúng tên vào `docs/screenshots/`, chạy lại `python tools/build_guide.py` sau khi đã cài `config/docs-requirements.txt`, hoặc thay ảnh trực tiếp trong Word bằng Change Picture. Tài liệu Word là hướng dẫn chính; script là nguồn tái tạo, nên lưu các sửa nội dung vào script để tránh mất khi tạo lại.
+Chụp theo `docs/screenshots/README.md`. Che API key, mã đăng nhập, email cá nhân không cần thiết và thông tin nhạy cảm trước khi lưu ảnh. File `docs/Huong-dan-su-dung.docx` hiện là bản chính, đã chứa nội dung và ảnh bổ sung thủ công. Thay ảnh trực tiếp trong Word bằng Change Picture hoặc sửa tài liệu hiện có bằng python-docx, giữ nguyên các ảnh đã chèn. Lưu bản dự phòng trước khi sửa.
+
+`python tools/build_guide.py` chỉ tạo bản nháp ban đầu ở `local/guide-draft.docx`; không ghi đè tài liệu chính. Nội dung bản nháp không thay thế các chỉnh sửa thủ công mới nhất. Các ảnh thực được lưu riêng trong `docs/screenshots/`; nguồn ảnh nằm ở `SOURCES.md` cùng folder.
 
 Giữ hình ảnh giao diện thực; không dùng ảnh giả để minh họa nơi tạo key. Placeholder hiện tại chỉ ghi rõ nội dung cần chụp. Nếu sửa layout, render và xem lại toàn bộ trang trước khi phát hành. Máy tác giả cần công cụ render DOCX phù hợp; máy người dùng chỉ cần Word hoặc ứng dụng đọc DOCX.

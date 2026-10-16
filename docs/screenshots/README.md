@@ -1,14 +1,21 @@
-# Danh sách ảnh cần bổ sung
+# Ảnh trong tài liệu Word
 
-Ảnh là tùy chọn ở bản đầu. `tools/build_guide.py` thay placeholder bằng PNG nếu tìm thấy đúng tên. Có thể thay trực tiếp từng ảnh trong Word qua Change Picture. Các ảnh placeholder ghi rõ nội dung cần chụp, không giả lập giao diện dịch vụ.
+Tài liệu Word hiện đã có ảnh người dùng chèn và ảnh đăng ký/API key từ nguồn chính thức. File Word là bản chính; thay ảnh trực tiếp bằng Change Picture. Giữ ảnh nguồn tại đây và ghi nguồn vào `SOURCES.md`. `tools/build_guide.py` chỉ tạo bản nháp riêng, không cập nhật nội dung thủ công trong tài liệu chính.
 
-| Tên file | Nội dung cần chụp |
+Các ảnh còn để bổ sung khi dùng tài khoản thực là `local-key-input.png` và `publish-review.png`. Chúng không thuộc phần đăng ký dịch vụ. Màn hình Connections trong ảnh Zernio chính thức đã minh họa cả Connect và trạng thái connected; không cần chèn lặp lại cùng ảnh.
+
+| Tên file | Nội dung |
 | --- | --- |
-| codex-workspace.png | Codex mở folder video-workflow-kit và ô nhập prompt setup |
+| github-download.png | Tải repo từ GitHub, do người dùng chụp |
+| codex-new-project.png | Bấm dấu cộng tạo project trong Codex |
+| codex-add-folder.png | Thêm folder nguồn vào project |
+| codex-select-folder.png | Chọn folder video-workflow-kit |
+| codex-setup-prompt.png | Gửi prompt thiết lập bộ kit |
+| elevenlabs-sign-up.jpg | Form đăng ký ElevenLabs trống |
 | elevenlabs-api-keys.png | ElevenLabs Developers → API Keys và nút Create API Key |
 | elevenlabs-stt-permission.png | Form tạo key, Restrict Key bật, Speech to Text được Access, các quyền không dùng bị tắt |
-| zernio-connect-accounts.png | Zernio chọn nền tảng để kết nối tài khoản |
-| zernio-connected-accounts.png | Danh sách tài khoản/kênh/Page đã kết nối, đủ tên để phân biệt đích đăng |
+| zernio-sign-up.jpg | Trang đăng ký Zernio |
+| zernio-connect-accounts.png | Connections, nút Connect và trạng thái connected |
 | zernio-create-key.png | Trang API Keys của Zernio và nút tạo key, không lộ key |
 | local-key-input.png | Terminal configure.ps1 với ô nhập key ẩn, không có plaintext key |
 | publish-review.png | Bản xem trước video và bảng duyệt caption, đích đăng, quyền riêng tư |

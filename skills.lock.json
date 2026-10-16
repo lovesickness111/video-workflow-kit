@@ -1,6 +1,6 @@
 {
   "kitFormat": 1,
-  "kitVersion": "0.1.0",
+  "kitVersion": "0.1.1",
   "repository": "https://github.com/lovesickness111/video-workflow-kit.git",
   "components": {
     "video-use": {
