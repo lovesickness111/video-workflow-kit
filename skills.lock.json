@@ -1,0 +1,36 @@
+{
+  "kitFormat": 1,
+  "kitVersion": "0.1.0",
+  "repository": "https://github.com/lovesickness111/video-workflow-kit.git",
+  "components": {
+    "video-use": {
+      "version": "43cfc56-kit.1",
+      "upstream": "https://github.com/browser-use/video-use.git",
+      "upstreamCommit": "43cfc566833548093455c9d4a46bd69913b7e552",
+      "paths": [
+        ".agents/skills/video-use",
+        "config/python-requirements.txt",
+        "patches/video-use-windows-subtitles.patch"
+      ],
+      "sha256": "91015a4b9d0a02ba1a1b52abe30d733501761f69fb12965ac0cf171d74115b26"
+    },
+    "publisher": {
+      "version": "0.1.0",
+      "paths": [
+        ".agents/skills/social-publishing",
+        "tools/publisher",
+        "config/accounts.example.json",
+        "config/publish.example.json"
+      ],
+      "sha256": "5697bc8059bc3c4d2be1525572d61733d1be62c859ce2fb1c7fe1b054675ecbe"
+    },
+    "workflow": {
+      "version": "0.1.0",
+      "paths": [
+        ".agents/skills/video-workflow",
+        "config/.env.example"
+      ],
+      "sha256": "ed142f0d18604ccf3b881d739c1c0cf4967f058def9cfce41031f77a989da300"
+    }
+  }
+}
